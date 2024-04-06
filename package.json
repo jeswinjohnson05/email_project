@@ -1,0 +1,18 @@
+{
+  "name": "prospeak",
+  "version": "3.0.0",
+  "productName": "ProSpeak",
+  "description": "An app that takes input in users native language as audio or text and genarate professional e-mail",
+  "main": "main.js",
+  "scripts": {
+    "package-win": "electron-packager . ProSpeak --overwrite asar=true --platform=win32 --arch=ia32 --icon=assets/logo.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"ProSpeak\"",
+    "start": "electron ."
+  },
+  "author": "Jeswin Kennopully Johnson",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "electron": "^23.1.2",
+    "electron-packager": "^17.1.1",
+    "python-shell": "^5.0.0"
+  }
+}
